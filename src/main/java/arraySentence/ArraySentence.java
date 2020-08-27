@@ -1,10 +1,8 @@
 package arraySentence;
 
-
 import java.util.ArrayList;
-import java.util.Collections;
 
-public class ArraySentence {
+public class ArraySentence implements IArraySentence {
     private ArrayList myArray;
 
     public ArraySentence() {
@@ -15,11 +13,11 @@ public class ArraySentence {
         this.myArray.add(sentence);
     }
 
-    public void sout() {
-        PrintArray printArray = new PrintArray(myArray);
+    public void PrintArray() {
+        new PrintArray(myArray);
     }
 
     public void GetRandom(int number) {
-        GetSomeRandomItems getSomeRandomItems = new GetSomeRandomItems(number, myArray);
+        new GetSomeRandomItems(number, myArray);
     }
 }
