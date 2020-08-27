@@ -1,4 +1,4 @@
-package arraySentence;
+import arraySentence.ArraySentence;
 
 public class RunArraySentence {
     public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class RunArraySentence {
         arraySentence.add("9) eeeee");
         arraySentence.add("10) qqqqq");
 
-        arraySentence.GetThreeRandom(3);
+        arraySentence.GetRandom(3);
         System.out.println("------");
 //        arraySentence.sout();
     }
