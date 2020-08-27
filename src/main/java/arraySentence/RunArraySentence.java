@@ -7,6 +7,13 @@ public class RunArraySentence {
         arraySentence.add("1) qqqqq");
         arraySentence.add("2) wwwwww");
         arraySentence.add("3) eeeee");
+        arraySentence.add("4) qqqqq");
+        arraySentence.add("5) wwwwww");
+        arraySentence.add("6) eeeee");
+        arraySentence.add("7) qqqqq");
+        arraySentence.add("8) wwwwww");
+        arraySentence.add("9) eeeee");
+        arraySentence.add("10) qqqqq");
 
         arraySentence.sout();
     }
