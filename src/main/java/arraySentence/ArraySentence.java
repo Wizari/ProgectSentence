@@ -2,6 +2,7 @@ package arraySentence;
 
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArraySentence {
     private ArrayList myArray;
@@ -19,6 +20,16 @@ public class ArraySentence {
         int x = 0;
         while (this.myArray.size() > x) {
             System.out.println(myArray.get(x));
+            x++;
+        }
+    }
+
+    void GetThreeRandom(int number) {
+        ArrayList shuffle = new ArrayList<String>(myArray);
+        Collections.shuffle(shuffle);
+        int x = 0;
+        while (number > x) {
+            System.out.println(shuffle.get(x));
             x++;
         }
     }
