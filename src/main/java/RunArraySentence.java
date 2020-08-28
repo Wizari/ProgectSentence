@@ -1,23 +1,23 @@
-import arraySentence.ArraySentence;
-import arraySentence.IArraySentence;
+import arraySentence.*;
 
 public class RunArraySentence {
     public static void main(String[] args) {
 
         IArraySentence arraySentence = new ArraySentence();
-        arraySentence.add("1) q");
-        arraySentence.add("2) w");
-        arraySentence.add("3) e");
-        arraySentence.add("4) r");
-        arraySentence.add("5) t");
-        arraySentence.add("6) y");
-        arraySentence.add("7) 1");
-        arraySentence.add("8) 2");
-        arraySentence.add("9) 3");
-        arraySentence.add("10) safety");
 
-        arraySentence.GetRandom(3);
+        new Add((ArraySentence) arraySentence, "1) q");
+        new Add((ArraySentence) arraySentence, "2) w");
+        new Add((ArraySentence) arraySentence, "3) qt");
+        new Add((ArraySentence) arraySentence, "4) yq");
+        new Add((ArraySentence) arraySentence, "5) yq");
+        new Add((ArraySentence) arraySentence, "6) qu");
+        new Add((ArraySentence) arraySentence, "7) iq");
+        new Add((ArraySentence) arraySentence, "8) qo");
+        new Add((ArraySentence) arraySentence, "9) qp");
+        new Add((ArraySentence) arraySentence, "10) q[");
+
+        new PrintArray((ArraySentence) arraySentence);
         System.out.println("-----------------");
-        arraySentence.PrintArray();
+        new GetSomeRandomItems(3, (ArraySentence) arraySentence);
     }
 }

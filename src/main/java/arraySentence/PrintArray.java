@@ -1,12 +1,10 @@
 package arraySentence;
 
-import java.util.ArrayList;
-
 public class PrintArray {
-    PrintArray(ArrayList arrayList) {
+    public PrintArray(ArraySentence array) {
         int x = 0;
-        while (arrayList.size() > x) {
-            System.out.println(arrayList.get(x));
+        while (array.myArray.size() > x) {
+            System.out.println(array.myArray.get(x));
             x++;
         }
     }

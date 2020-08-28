@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class GetSomeRandomItems {
-    GetSomeRandomItems(int number, ArrayList arrayList) {
-        ArrayList shuffle = new ArrayList<String>(arrayList);
+    public GetSomeRandomItems(int number, ArraySentence arrayList) {
+        ArrayList shuffle = new ArrayList<String>(arrayList.myArray);
         Collections.shuffle(shuffle);
         int x = 0;
         while (number > x) {
@@ -14,3 +14,4 @@ public class GetSomeRandomItems {
         }
     }
 }
+
